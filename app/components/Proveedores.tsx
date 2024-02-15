@@ -136,6 +136,19 @@ export default async function Proveedores({
                 <div className="min-h-[70px] overflow-x-hidden overflow-y-auto max-h-[150px] p-4 rounded-xl bg-gray-200">
                   <p>{proveedor.descripcion}</p>
                 </div>
+                <div className="flex justify-between mt-3">
+                  <p className="font-semibold">Se entrega el {formatDateToLatam(proveedor.entrega)}</p>
+                  <p className="text-green-600">${formatMoney(proveedor.precio)}</p>
+                </div>
+                <div className="flex justify-end gap-2 items-center mt-2">
+                  <Link
+                    href={`/productos/${proveedor.id}/edit`}
+                    className="bg-blue-500 text-white rounded-xl p-3 transition-colors hover:bg-blue-300"
+                  >
+                    <FaPencilAlt />
+                  </Link>
+                  <DeleteButton mode={"proveedores"} id={proveedor.id} mobile={true} />
+                </div>
               </article>
             ))
           )
