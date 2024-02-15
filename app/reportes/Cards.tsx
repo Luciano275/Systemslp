@@ -39,7 +39,7 @@ export default function Cards ({
   sector
 }: IProps) {
 
-  const revenueTotal = parseFloat(formatMoney(revenueLost).toFixed(2)).toString() + '102301203120310'
+  const revenueTotal = parseFloat(formatMoney(revenueLost).toFixed(2)).toString()
 
   return (
     <div className="mt-5 px-2 grid" style={{
