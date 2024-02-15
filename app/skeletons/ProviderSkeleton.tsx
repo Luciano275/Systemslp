@@ -39,6 +39,29 @@ const RowSkeleton = () => {
   );
 }
 
+const MobileSkeleton = () => {
+  return (
+    <div className="bg-gray-100 p-2 rounded-xl">
+      <div className="pb-4 border-b border-neutral-400 mb-4 flex items-center gap-2">
+        <div className="grow flex flex-col gap-y-3">
+          <div className="h-6 bg-gray-400 rounded-xl animate-pulse w-40"></div>
+          <div className="h-4 bg-gray-400 rounded-xl animate-pulse w-24"></div>
+        </div>
+        <div className="bg-gray-400 w-12 h-12 rounded-full animate-pulse"></div>
+      </div>
+      <div className="bg-gray-200 min-h-[70px] rounded-xl animate-pulse"></div>
+      <div className="flex pt-4 pb-2 justify-between items-center">
+        <div className="bg-gray-700 rounded-full h-5 w-40 animate-pulse"></div>
+        <div className="bg-gray-400 h-6 w-10 rounded-xl animate-pulse"></div>
+      </div>
+      <div className="flex justify-end gap-2 items-center mt-2">
+        <div className="w-10 h-10 rounded-xl bg-gray-500"></div>
+        <div className="w-10 h-10 rounded-xl bg-gray-700"></div>
+      </div>
+    </div>
+  )
+}
+
 export const ProviderSkeleton = () => {
   return (
     <>
@@ -74,6 +97,16 @@ export const ProviderSkeleton = () => {
             <RowSkeleton />
           </tbody>
         </table>
+      </div>
+
+      {/* Mobile */}
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-6 lg:hidden py-4">
+        <MobileSkeleton />
+        <MobileSkeleton />
+        <MobileSkeleton />
+        <MobileSkeleton />
+        <MobileSkeleton />
+        <MobileSkeleton />
       </div>
 
     </>
