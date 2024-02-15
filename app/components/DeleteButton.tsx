@@ -58,7 +58,7 @@ export default function DeleteButton({
 
     Swal.fire({
       title: "¿Estás seguro?",
-      text: "Esta acción no tiene vuelta atrás...Piénsalo.",
+      text: "Esta acción no tiene vuelta atrás...se eliminarán también las pérdidas.",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
