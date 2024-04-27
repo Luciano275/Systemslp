@@ -1,3 +1,8 @@
+<h1 align="center">System SLP</h1>
+
+## Screenshot
+![systemslp-screenshot](https://github.com/Luciano275/Systemslp/assets/71286132/b441a6f3-c34d-4a8e-b457-254e3cdfe1c9)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
